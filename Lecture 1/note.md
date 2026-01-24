@@ -14,7 +14,7 @@
 ## cmd lines:
 - cat: print file's data on terminal
 - chmod 400
-- ssh name@ip  (do ssh)
+- ssh username@ip  (do ssh)
 - sudo apt update ( just list )
 - sudo apt upgrade ( to install actual packages)
 - cat /etc/os-release ( to see os details)

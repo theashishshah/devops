@@ -1,0 +1,4 @@
+- cat etc/group ( list all group) # here we can get all the groups
+- sudo usermod -aG sudo username ( add user into sudo group)
+- sudo cat /etc/sudoers ( to see priviles)
+- sudo vsudo
