@@ -1,0 +1,1 @@
+1. try to know all the availables shell and fine advantages and disadvantages.
