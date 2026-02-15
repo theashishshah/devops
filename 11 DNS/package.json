@@ -1,0 +1,17 @@
+{
+    "name": "11 DNS",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.15.1",
+    "dependencies": {
+        "express": "^5.2.1"
+    }
+}
