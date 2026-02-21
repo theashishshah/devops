@@ -1,0 +1,18 @@
+{
+    "name": "03 https",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon http.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.15.1",
+    "dependencies": {
+        "express": "^5.2.1",
+        "nodemon": "^3.1.13"
+    }
+}
