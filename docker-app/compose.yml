@@ -1,0 +1,36 @@
+name: payo # version (obsolete)
+
+services: 
+  database: # name of service or container name with prefix
+    image: "mysql"
+    container_name: mysql-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD} # use docker secret or we can use env file, or shell env file export PASS=root
+    volumes:
+      - blog-db-vol:/var/lib/mysql
+    ports:
+      - '3306:3306'
+    networks:
+      - network-app
+  express-app: # name of another server
+    build: 
+      dockerfile: Dockerfile
+      context: "./"
+    container_name: 'express-app'
+    ports:
+      - "9999:3000"
+    env_file:
+      - ./.env
+    volumes:
+      - ./:/app
+    depends_on:
+      - database
+    networks:
+      - network-app
+
+
+volumes:
+  blog-db-vol: 
+networks:
+  network-app: {
+  }
