@@ -1,0 +1,1 @@
+1. make a cluster and manage it using docker sworm
